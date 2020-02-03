@@ -1,0 +1,37 @@
+Admin Django admin
+
+(myvenv) C:\Users\Mariusz\kurs>python manage.py createsuperuser
+Użytkownik (leave blank to use 'mariusz'):
+Adres email: mnurski@gmail.com
+Password:		Mariusz666
+Password (again):	Mariusz666
+Hasło jest zbyt podobne do użytkownik.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+
+
+
+(myvenv) C:\Users\Mariusz\kurs>git config --global user.name "mariusz"
+
+(myvenv) C:\Users\Mariusz\kurs>git config --global user.email mnurski@gmail.com
+
+
+GitHub
+
+MNurski
+mnurski@gmail.com
+Mariusz666*
+
+https://github.com/MNurski/my-first-blog.git
+
+
+
+www.pythonanywhere.com
+
+MNurski
+Mariusz666*
+
+Your API token
+a0f8560bd828e27e8bf4b0965b729ee9c3d23277
+
