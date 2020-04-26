@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+    {% for post in posts %}
+        <div class="post">
+            <p class="date">Stworzony: {{ post.created_date|date:'d-m-Y' }}, pk: {{post.pk}}
+            <a class="btn btn-default" href="{% url 'post_publish_draft_list' pk=post.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a class="btn btn-default" href="{% url 'post_delete_redirect' pk=post.pk redirect_list='post_draft_list' %}"><span class="glyphicon glyphicon-trash"></span></a>
+            </p>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}" >{{ post.title }}</a></h1>
+            <p>{{ post.text|truncatechars:200 }}</p>
+            <p>Autor: {{ post.author }}</p>
+            <hr style="border: 0px; background: red; height: 4px;">
+        </div>
+    {% endfor %}
+
+{% endblock %}
