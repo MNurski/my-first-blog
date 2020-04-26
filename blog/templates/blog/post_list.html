@@ -9,7 +9,7 @@
                   <a class="btn btn-default" href="{% url 'post_delete_redirect' pk=post.pk redirect_list='post_list' %}"><span class="glyphicon glyphicon-trash"></span></a>
                 </p>
             </div>
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <h2><a title="Przejdź do postu" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
             <p>Autor: {{ post.author }}</p>
             <a href="{% url 'post_detail' pk=post.pk %}">Komentarze: {{ post.comments.count }}, w tym zatwierdzone {{ post.approved_comments.count }}</a>
